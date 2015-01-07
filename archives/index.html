@@ -63,10 +63,10 @@
       <div class="outer">
         <section id="main">
   
-    <article id="post-First-Post" class="article article-type-post" itemscope itemprop="blogPost">
+    <article id="post-水平居中又一方法" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="/2014/12/31/First-Post/" class="article-date">
-  <time datetime="2014-12-31T03:33:56.000Z" itemprop="datePublished">12月 31 2014</time>
+    <a href="/2015/01/06/水平居中又一方法/" class="article-date">
+  <time datetime="2015-01-06T09:37:47.000Z" itemprop="datePublished">1月 6 2015</time>
 </a>
     
   </div>
@@ -77,7 +77,7 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2014/12/31/First-Post/">First Post</a>
+      <a class="article-title" href="/2015/01/06/水平居中又一方法/">水平居中又一方法</a>
     </h1>
   
 
@@ -85,12 +85,42 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>jkjkjkjkljkljkljkljlkjlkjlkjkl<br>jkjkjkjkljkljkljkljlkjlkjlkjkl<br>jkjkjkjkljkljkljkljlkjlkjlkjkl<br>jkjkjkjkljkljkljkljlkjlkjlkjkl</p>
+        <p>对应内容水平居中，有这好多方法，这里我们介绍另外一种奇妙的方法。</p>
+<h2 id="先看需要居中的HTML文档">先看需要居中的HTML文档</h2>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"centeredmenu"</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="title">ul</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="title">li</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"#"</span>&gt;</span>Tab one<span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="title">li</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"#"</span>&gt;</span>Tab two<span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="title">li</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"#"</span>&gt;</span>Tab three<span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="title">li</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"#"</span>&gt;</span>Tab four<span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="title">ul</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="title">div</span>&gt;</span></div></pre></td></tr></table></figure>
+
+<h2 id="内容居中的CSS代码">内容居中的CSS代码</h2>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div></pre></td><td class="code"><pre><div class="line"><span class="id">#centeredmenu</span><span class="rules">{</span></div><div class="line">    <span class="rule"><span class="attribute">float</span>:<span class="value">left</span></span>;</div><div class="line">    <span class="rule"><span class="attribute">width</span>:<span class="value"><span class="number">100%</span></span></span>;</div><div class="line">    <span class="rule"><span class="attribute">background</span>:<span class="value"><span class="hexcolor">#fff</span></span></span>;</div><div class="line">    <span class="rule"><span class="attribute">border-bottom</span>:<span class="value"><span class="number">4px</span> solid <span class="hexcolor">#000</span></span></span>;</div><div class="line">    <span class="rule"><span class="attribute">overflow</span>:<span class="value">hidden</span></span>;</div><div class="line">    <span class="rule"><span class="attribute">position</span>:<span class="value">relation</span></span>;</div><div class="line"><span class="rule">}</span></div><div class="line"><span class="id">#centeredmenu</span> <span class="tag">ul</span> <span class="rules">{</span></div><div class="line">    <span class="rule"><span class="attribute">clear</span>:<span class="value">left</span></span>;</div><div class="line">    <span class="rule"><span class="attribute">float</span>:<span class="value">left</span></span>;</div><div class="line">    <span class="rule"><span class="attribute">list-style</span>:<span class="value">none</span></span>;</div><div class="line">    <span class="rule"><span class="attribute">margin</span>:<span class="value"><span class="number">0</span></span></span>;</div><div class="line">    <span class="rule"><span class="attribute">padding</span>:<span class="value"><span class="number">0</span></span></span>;</div><div class="line">    <span class="rule"><span class="attribute">position</span>:<span class="value">relation</span></span>;</div><div class="line">    <span class="rule"><span class="attribute">left</span>:<span class="value"><span class="number">50%</span></span></span>;</div><div class="line">    <span class="rule"><span class="attribute">text-align</span>:<span class="value">center</span></span>;</div><div class="line"><span class="rule">}</span></div><div class="line"><span class="id">#centeredmenu</span> <span class="tag">ul</span> <span class="tag">li</span> <span class="rules">{</span></div><div class="line">    <span class="rule"><span class="attribute">display</span>:<span class="value">block</span></span>;</div><div class="line">    <span class="rule"><span class="attribute">float</span>:<span class="value">left</span></span>;</div><div class="line">    <span class="rule"><span class="attribute">list-style</span>:<span class="value">none</span></span>;</div><div class="line">    <span class="rule"><span class="attribute">margin</span>:<span class="value"><span class="number">0</span></span></span>;</div><div class="line">    <span class="rule"><span class="attribute">padding</span>:<span class="value"><span class="number">0</span></span></span>;</div><div class="line">    <span class="rule"><span class="attribute">position</span>:<span class="value">relation</span></span>;</div><div class="line">    <span class="rule"><span class="attribute">right</span>:<span class="value"><span class="number">50%</span></span></span>;</div><div class="line"><span class="rule">}</span></div><div class="line"><span class="id">#centeredmenu</span> <span class="tag">ul</span> <span class="tag">li</span> <span class="tag">a</span> <span class="rules">{</span></div><div class="line">    <span class="rule"><span class="attribute">display</span>:<span class="value">block</span></span>;</div><div class="line">    <span class="rule"><span class="attribute">margin</span>:<span class="value"><span class="number">0</span> <span class="number">0</span> <span class="number">0</span> <span class="number">1px</span></span></span>;</div><div class="line">    <span class="rule"><span class="attribute">padding</span>:<span class="value"><span class="number">3px</span> <span class="number">10px</span></span></span>;</div><div class="line">    <span class="rule"><span class="attribute">background</span>:<span class="value"><span class="hexcolor">#ddd</span></span></span>;</div><div class="line">    <span class="rule"><span class="attribute">color</span>:<span class="value"><span class="hexcolor">#000</span></span></span>;</div><div class="line">    <span class="rule"><span class="attribute">text-decoration</span>:<span class="value">none</span></span>;</div><div class="line">    <span class="rule"><span class="attribute">line-height</span>:<span class="value"><span class="number">1.3em</span></span></span>;</div><div class="line"><span class="rule">}</span></div><div class="line"><span class="id">#centeredmenu</span> <span class="tag">ul</span> <span class="tag">li</span> <span class="tag">a</span><span class="pseudo">:hover</span> <span class="rules">{</span></div><div class="line">    <span class="rule"><span class="attribute">background</span>:<span class="value"><span class="hexcolor">#369</span></span></span>;</div><div class="line">    <span class="rule"><span class="attribute">color</span>:<span class="value"><span class="hexcolor">#fff</span></span></span>;</div><div class="line"><span class="rule">}</span></div><div class="line"><span class="id">#centeredmenu</span> <span class="tag">ul</span> <span class="tag">li</span> <span class="tag">a</span><span class="class">.active</span>,</div><div class="line"><span class="id">#centeredmenu</span> <span class="tag">ul</span> <span class="tag">li</span> <span class="tag">a</span><span class="class">.active</span><span class="pseudo">:hover</span><span class="rules">{</span></div><div class="line">    <span class="rule"><span class="attribute">color</span>:<span class="value"><span class="hexcolor">#fff</span></span></span>;</div><div class="line">    <span class="rule"><span class="attribute">background</span>:<span class="value"><span class="hexcolor">#000</span></span></span>;</div><div class="line">    <span class="rule"><span class="attribute">font-weight</span>:<span class="value">bold</span></span>;</div><div class="line"><span class="rule">}</span></div></pre></td></tr></table></figure>
+
+<h2 id="居中方法是如何工作的">居中方法是如何工作的</h2>
+<p>此处居中方法的实现原理是浮动元素彼此相对定位,为了正确解释这里先让我们看下元素浮动时是如何改变自己的尺寸的</p>
+<h3 id="无浮动的DIV">无浮动的DIV</h3>
+<p><img src="/centered-menus-non-floated-div.gif" alt="sss"><br>这是一个无浮动的DIV,可以看到它扩展到了整个父元素宽度,也就是整个页面.</p>
+<h3 id="左浮动的DIV">左浮动的DIV</h3>
+<p><img src="/centered-menus-left-floated-div.gif" alt="sss"><br>现在该DIV左浮动,它会自动收缩到内部内容的宽度,也就是文字”DIV”的宽度.这里的收缩是居中过程的关键,他会帮助我们使菜单适当进入中间.</p>
+<h3 id="标准的左置菜单">标准的左置菜单</h3>
+<p>我们现将菜单左浮动再一步步移动TABS至中间.这里将各个元素以不同的色框标示,从而容易区分他们的结构.<br><img src="/centered-menus-left-tabs.gif" alt="sss"><br>注意一下的步骤。<br><em>将centeredmenu DIV左浮动但是给于100%的width，这样他就仍然可以扩展到整个页面。
+</em>将centeredmenu DIV中的ul元素左浮动。这样意味着ul会收缩到自己内容的宽度，同时所有TABS的宽度也会收缩。<br><em>ul中的所有li左浮动。这会造成他们围绕着自己内部的link标签收缩从而排列成水平的一行。
+</em>在tab中的每个link文本显示是；Tab1，Tab2，等等</p>
+<h3 id="移动无序列表的位置">移动无序列表的位置</h3>
+<p><img src="/centered-menus-shifted-tabs.gif" alt="sss"><br>接下来我们使用<em>position:relative</em>将ul元素右移50%。当使用百分比的方式将元素移向一旁的时候特别需要注意他移动的是父元素的百分比宽度而不是自己的宽度。所以在这个例子中ul元素按centeredmenu DIV宽度的50%右移-即浏览器窗口的50%。结果是我们的菜单从屏幕的中间开始同时部分超出了右页面，不必担心，接下来我们会使他在中间。</p>
+<h3 id="移动行列的位置">移动行列的位置</h3>
+<p><img src="/centered-menus-centered-tabs.gif" alt="ss"><br>最后的步骤是将所有的li元素按50%重回左侧。这里是以ul元素宽度的50%同时会使所有的tabs精确的位于窗口的中间。</p>
+<h3 id="注意点">注意点</h3>
+<p>这个置中菜单的方法是固定滚动但是有一些事情需要注意<br><em>因为ul元素部分溢出浏览器窗口会横向滚动除非你使用了</em>overflow:hidden<em>规则到centeredmenu DIV上。这将会隐藏溢出的部分，
+</em>ul元素和tabs没有对齐所以他不能使用任何的可见式样。ul元素不能使用背景颜色和边框这样它可以完全的不可见。将所有的tab式样只应用在li和a元素上。<br>*如果需要第一个和最后一个tab区别与其他的，添加类到第一个和最后一个li元素上使他们可以独立对位。</p>
+<h2 id="主要特征">主要特征</h2>
+<h3 id="没有CSS_hacks">没有CSS hacks</h3>
+<h3 id="对XHTML_严格标签可用">对XHTML 严格标签可用</h3>
+<h3 id="可以重置文本大小">可以重置文本大小</h3>
+<h3 id="没有js">没有js</h3>
+<h3 id="支持所有的浏览器">支持所有的浏览器</h3>
+<p>参考url：<a href="http://matthewjamestaylor.com/blog/beautiful-css-centered-menus-no-hacks-full-cross-browser-support#" target="_blank" rel="external">http://matthewjamestaylor.com/blog/beautiful-css-centered-menus-no-hacks-full-cross-browser-support#</a></p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://gliudong.github.io/2014/12/31/First-Post/" data-id="lmg0s0ptin8e6x0p" class="article-share-link">Share</a>
+      <a data-url="http://gliudong.github.io/2015/01/06/水平居中又一方法/" data-id="dngagw16526lreyf" class="article-share-link">Share</a>
       
       
     </footer>
@@ -169,7 +199,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Archives</h3>
     <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/12/">December 2014</a><span class="archive-list-count">2</span></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/01/">January 2015</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/12/">December 2014</a><span class="archive-list-count">1</span></li></ul>
     </div>
   </div>
 
@@ -181,7 +211,7 @@
       <ul>
         
           <li>
-            <a href="/2014/12/31/First-Post/">First Post</a>
+            <a href="/2015/01/06/水平居中又一方法/">水平居中又一方法</a>
           </li>
         
           <li>
@@ -200,7 +230,7 @@
   
   <div class="outer">
     <div id="footer-info" class="inner">
-      &copy; 2014 LIUDONG<br>
+      &copy; 2015 LIUDONG<br>
       Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
     </div>
   </div>
