@@ -132,8 +132,7 @@
 <h4 id="Flex-basis和Flex-grow">Flex-basis和Flex-grow</h4>
 <p>Flex-basis决定了其他两个属性如何起作用，将是伸长还是缩短。他是Flex item的初始尺寸。</p>
 <h4 id="关于伸长">关于伸长</h4>
-<p><figure class="d-container"></figure></p>
-<p><ul class="d-flex d-ex2"><br>    <li>2 / 0 / 100px</li><br>    <li>0 / 0 / 150px</li><br>    <li>2 / 0 / 50px</li><br></ul><br><br>在上例可以看到，中间的元素没有允许伸长和缩短所以保持150px，剩余的450px的空间由其他的flexitem填充，他们同时有相同的值2,所以各分配225px。那么他是如何计算的呢？</p>
+<div class="d-container"><p><ul class="d-flex d-ex2"><li>2 / 0 / 100px</li><li>0 / 0 / 150px</li>    <li>2 / 0 / 50px</li></ul></div><br><br>在上例可以看到，中间的元素没有允许伸长和缩短所以保持150px，剩余的450px的空间由其他的flexitem填充，他们同时有相同的值2,所以各分配225px。那么他是如何计算的呢？</p>
 <h4 id="计算空间">计算空间</h4>
 <p>究竟有多少的空间分配给各个的flex item，他们的计算公式如下：</p>
 <figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">Availabel space =(<span class="keyword">container</span> <span class="keyword">size</span> - flex-basis siblings total)</div><div class="line">可用空间=容器的空间大小 - 所有flex-basis的和</div></pre></td></tr></table></figure>
